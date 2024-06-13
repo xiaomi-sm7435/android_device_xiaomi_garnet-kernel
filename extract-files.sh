@@ -108,8 +108,8 @@ done
 echo "Extracting the dlkm kernel modules"
 out=$extract_out/vendor_dlkm
 
-echo "Extracting at $out"
-fsck.erofs --extract="$out" $(get_path vendor_dlkm.img)
+echo "Extracting the vendor dlkm"
+fsck.erofs --extract $(get_path vendor_dlkm.img)
 
 echo "Done. Extracting the vendor dlkm"
 
